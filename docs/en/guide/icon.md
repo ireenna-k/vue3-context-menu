@@ -78,7 +78,7 @@ Customize the icon of the entire menu:
 Customize icon in function mode:
 
 ```js
-import { h } from 'vue';
+import { h } from 'vue-demi';
 
 { 
   label: "Item with custom icon render",

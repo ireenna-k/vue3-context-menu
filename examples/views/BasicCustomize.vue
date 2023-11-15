@@ -58,7 +58,7 @@ this.$contextmenu({
 </template>
 
 <script lang="ts">
-import { defineComponent, h } from 'vue'
+import { defineComponent, h } from 'vue-demi'
 import ContextMenu from '../../src/ContextMenuInstance';
 import type { MenuOptions } from '../../src/ContextMenuDefine';
 

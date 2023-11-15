@@ -166,7 +166,7 @@ this.$contextmenu({
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue-demi'
 import type { MenuOptions } from '@imengyu/vue3-context-menu';
 
 export default defineComponent({
@@ -280,7 +280,7 @@ export default defineComponent({
 
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue-demi'
 import MyContextMenu from './MyContextMenu.vue';//导入上面的组件
 
 export default defineComponent({

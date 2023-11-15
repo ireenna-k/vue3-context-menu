@@ -1,4 +1,5 @@
 const path = require('path')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 const resolve = dir => path.join(__dirname, dir)
 
@@ -12,6 +13,9 @@ module.exports = {
   },
   publicPath: './',
   chainWebpack: config => {
+    config
+            .plugin('fork-ts-checker')
+                .use(ForkTsCheckerWebpackPlugin);
     config.module
     .rule('js')
     .include

@@ -38,7 +38,7 @@ import '@imengyu/vue3-context-menu/lib/vue3-context-menu.css'
 
 ```vue
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue-demi'
 
 //导入组件
 import { ContextMenu, ContextMenuGroup, ContextMenuSeparator, ContextMenuItem } from '@imengyu/vue3-context-menu';

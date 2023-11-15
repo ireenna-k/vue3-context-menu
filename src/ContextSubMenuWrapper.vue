@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent, h, onBeforeUnmount, onMounted, PropType, provide, ref, renderSlot, toRefs, VNode, watch } from 'vue'
+import { defineComponent, h, onBeforeUnmount, onMounted, PropType, provide, ref, renderSlot, toRefs, VNode, watch } from 'vue-demi'
 import { MenuConstOptions, MenuItem, MenuOptions, MenuPopDirection } from './ContextMenuDefine'
 import { addOpenedContextMenu, removeOpenedContextMenu } from './ContextMenuMutex';
 import ContextSubMenuConstructor, { SubMenuContext, SubMenuParentContext } from './ContextSubMenu.vue';

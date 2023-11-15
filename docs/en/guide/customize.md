@@ -161,7 +161,7 @@ The following is a case of fully customized menus. You can use this case to enca
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue-demi'
 import type { MenuOptions } from '@imengyu/vue3-context-menu';
 
 export default defineComponent({
@@ -275,7 +275,7 @@ Usage after encapsulation:
 
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue-demi'
 import MyContextMenu from './MyContextMenu.vue';//Import the menu component above 
 
 export default defineComponent({

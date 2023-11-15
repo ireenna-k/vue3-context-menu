@@ -83,7 +83,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, inject, nextTick, onMounted, PropType, provide, ref, toRefs } from 'vue'
+import { defineComponent, inject, nextTick, onMounted, PropType, provide, ref, toRefs } from 'vue-demi'
 import { MenuOptions, MenuItem, ContextMenuPositionData, MenuConstOptions, MenuPopDirection } from './ContextMenuDefine'
 import { getLeft, getTop, solveNumberOrStringSize } from './ContextMenuUtils'
 import { GlobalHasSlot, GlobalRenderSlot } from './ContextMenu.vue'

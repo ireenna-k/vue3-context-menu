@@ -80,7 +80,7 @@ v-model:show="show"
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue-demi'
 import { MenuOptions } from '../../src/ContextMenuDefine';
 
 export default defineComponent({

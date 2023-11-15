@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { reactive } from 'vue-demi'
 import { MenuBarOptions } from '../../src/MenuBar';
 import MenuBar from '../../src/MenuBar.vue';
 

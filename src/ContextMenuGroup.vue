@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent, h, inject, toRefs, PropType, SVGAttributes } from 'vue'
+import { defineComponent, h, inject, toRefs, PropType, SVGAttributes } from 'vue-demi'
 import ContextSubMenuConstructor from './ContextSubMenu.vue';
 import ContextMenuItemConstructor from './ContextMenuItem.vue';
 import { MenuOptions } from './ContextMenuDefine';

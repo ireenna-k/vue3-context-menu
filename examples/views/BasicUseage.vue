@@ -98,7 +98,7 @@ createApp(App)
 </template>
 
 <script setup lang="ts">
-import { onMounted, reactive } from 'vue'
+import { onMounted, reactive } from 'vue-demi'
 import { MenuOptions } from '../../src/ContextMenuDefine';
 import ContextMenu from '../../src/ContextMenuInstance';
 

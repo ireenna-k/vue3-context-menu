@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent, h, PropType, Teleport, toRefs, VNode } from 'vue'
+import { defineComponent, h, PropType, Teleport, toRefs, VNode } from 'vue-demi'
 import { MenuOptions } from './ContextMenuDefine'
 import { genContainer } from "./ContextMenuUtils";
 import ContextSubMenuWrapperConstructor from './ContextSubMenuWrapper.vue'

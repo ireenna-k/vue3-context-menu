@@ -140,7 +140,7 @@ The following example shows how to dynamically display/hide menus and dynamicall
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue-demi'
 import type { MenuOptions } from '@imengyu/vue3-context-menu';
 
 export default defineComponent({

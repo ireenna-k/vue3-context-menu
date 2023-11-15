@@ -45,7 +45,7 @@
 </template>
 
 <script lang="ts">
-import { ref, PropType, defineComponent, onMounted, watch } from 'vue';
+import { ref, PropType, defineComponent, onMounted, watch } from 'vue-demi';
 import { MenuBarOptions } from './MenuBar';
 import { ContextMenuInstance, MenuItem } from './ContextMenuDefine';
 import { getTop, getLeft } from './ContextMenuUtils';

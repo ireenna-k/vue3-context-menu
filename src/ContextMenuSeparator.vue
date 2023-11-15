@@ -4,7 +4,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, inject } from 'vue'
+import { defineComponent, inject } from 'vue-demi'
 import { GlobalHasSlot, GlobalRenderSlot } from './ContextSubMenuWrapper.vue';
 import { VNodeRender } from './ContextMenuUtils';
 

@@ -76,7 +76,7 @@ this.$contextmenu({
 在函数模式自定义图标：
 
 ```js
-import { h } from 'vue';
+import { h } from 'vue-demi';
 
 { 
   label: "Item with custom icon render",

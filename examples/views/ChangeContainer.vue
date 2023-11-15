@@ -56,7 +56,7 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, ref } from 'vue'
+import { reactive, ref } from 'vue-demi'
 import { MenuOptions } from '../../src/ContextMenuDefine';
 import ContextMenuComponent from '../../src/ContextMenu.vue';
 import ContextMenu from '../../src/ContextMenuInstance';

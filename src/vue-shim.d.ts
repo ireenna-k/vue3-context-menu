@@ -1,6 +1,6 @@
 declare module '*.vue' {
-  import type { DefineComponent } from 'vue'
-  import { App, defineComponent } from 'vue'
+  import type { DefineComponent } from 'vue-demi'
+  import { App, defineComponent } from 'vue-demi'
   const component: ReturnType<typeof defineComponent> & {
     install(app: App): void
   }
