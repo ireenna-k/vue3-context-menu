@@ -111,6 +111,7 @@ export default defineComponent({
 
     function onMenuKeyDown(e: KeyboardEvent) {
       let handled = true;
+      let key;
       //Handle keyboard event
       switch(e.key) {
         case "Escape": {
@@ -146,7 +147,18 @@ export default defineComponent({
           currentOpenedMenu.value?.triggerCurrentItemClick(e);
           break;
         default:
-          handled = false;
+          // Handle simple one-digit or one-letter shortcuts
+          if(e.key >="0" && e.key <="9"){
+            key = e.key;
+          }else if(e.code >= "KeyA" && e.code <= "KeyZ"){
+            // Use event code to prevent the keyboard from having another language letter
+            key = e.code.replace("Key",""); 
+          }
+          if(key !== undefined){
+            currentOpenedMenu.value?.moveCurrentItemByShortcut(key);
+          } else {
+            handled = false;
+          }
           break;
       }
       if (handled && currentOpenedMenu.value) {

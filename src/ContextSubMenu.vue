@@ -111,6 +111,7 @@ export interface SubMenuContext {
   moveCurrentItemLast: () => void,
   moveCurrentItemDown: () => void,
   moveCurrentItemUp: () => void,
+  moveCurrentItemByShortcut:(letter:string) =>void,
   focusCurrentItem: () => void,
   triggerCurrentItemClick: (e: KeyboardEvent|MouseEvent) => void,
 }
@@ -248,6 +249,12 @@ export default defineComponent({
         }
       }
     }
+    function findShortcutAndFocusNotDisableItem(key: string) {
+      let index = props.items.findIndex(x=>x.shortcut?.toUpperCase() == key.toUpperCase());
+      if (index > -1) {
+        setAndFocusCurrentMenu(index);
+      }
+    }
     function setAndFocusCurrentMenu(index?: number) {
       if (currentItem)
         blurCurrentMenu();
@@ -291,6 +298,7 @@ export default defineComponent({
       moveCurrentItemLast: () => setAndFocusNotDisableItem(false),
       moveCurrentItemDown: () => setAndFocusNotDisableItem(true, (currentItem ? (menuItems.indexOf(currentItem) + 1) : 0)),
       moveCurrentItemUp: () => setAndFocusNotDisableItem(false, (currentItem ? (menuItems.indexOf(currentItem) - 1) : 0)),
+      moveCurrentItemByShortcut: (letter:string) => findShortcutAndFocusNotDisableItem(letter),
       focusCurrentItem: () => setAndFocusCurrentMenu(),
       openCurrentItemSubMenu: () => {
         if (currentItem)
