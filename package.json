@@ -1,5 +1,5 @@
 {
-  "name": "@iryna-k/vue3-context-menu",
+  "name": "@k.iryna/vue3-context-menu",
   "version": "1.3.4",
   "description": "A context menu component for Vue3",
   "main": "lib/vue3-context-menu.umd.min.js",
